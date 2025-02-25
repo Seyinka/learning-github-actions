@@ -1,0 +1,15 @@
+name: Learning Github Actions
+
+on: push
+
+jobs: 
+    first_job:
+        runs-on: ubuntu-latest
+
+        steps:
+            - name: Welcome
+              run: echo "My First Githun Actions"
+
+            - name: Read file
+              run: cat README.md 
+
