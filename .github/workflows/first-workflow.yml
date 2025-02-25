@@ -10,6 +10,9 @@ jobs:
             - name: Welcome
               run: echo "My First Githun Actions"
 
+            - name: List files
+              run: ls
+
             - name: Read file
               run: cat README.md 
 
