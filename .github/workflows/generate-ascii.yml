@@ -8,7 +8,7 @@ jobs:
 
         steps:
             - name: Install Cowsay
-              uses: sudo apt install cowsay -y
+              run: sudo apt install cowsay -y
 
             - name: Execute cowsay cmd
               run: cowsay -f dragon "Run for cover, I am a DRAGON....ROAR" >> dragon.txt 
@@ -21,7 +21,7 @@ jobs:
 
         steps:
             - name: Sleep for 10 seconds
-              uses: sleep 10 
+              run: sleep 10 
 
             - name: Check if files exist
               run: grep -i "dragon" dragon.txt 
@@ -31,7 +31,7 @@ jobs:
 
         steps:
             - name: Read file
-              uses: cat dragon.txt 
+              run: cat dragon.txt 
 
             - name: Deploy
               run: echo Deploying ... .. . 
