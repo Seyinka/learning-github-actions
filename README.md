@@ -8,3 +8,5 @@ Actions – Actions are reusable units of code within workflows. GitHub provides
 Triggers – GitHub Actions can be triggered by different events, such as push, pull_request, schedule (cron jobs), workflow_dispatch (manual triggers), and more. This flexibility allows automation of CI/CD, testing, and deployment processes.
 
 Secrets & Environment Variables – GitHub Actions support encrypted secrets (secrets.GITHUB_TOKEN, AWS credentials, etc.) and environment variables (env keyword) for securely handling sensitive data within workflows.
+
+Workflow Events Filters and Activity Types
